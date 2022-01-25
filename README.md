@@ -41,7 +41,7 @@ This `UpdateItem` object takes in 3 parameters:
 
 `id` - Unique for for loop
 
-`icon` - Hooked up to SF Symbols - Check out Apple's site for more details https://developer.apple.com/design/human-interface-guidelines/sf-symbols/overview/
+`icon` - Hooked up to SF Symbols - Check out [Apple's site](https://developer.apple.com/design/human-interface-guidelines/sf-symbols/overview/) for more details
 
 `content` - Text of what is inside the specific icon display
 
@@ -51,11 +51,17 @@ UpdateItem(id: 1, icon: "x.circle", content: "Sample and this is the section of 
 ```
 
 
-I usually hook it up to global variables connected to local storage so that a user only gets it presented to them once when loading up the app.
+I usually hook it up to global variables that I can version bump every new release and connect the version number to local storage so that a user only gets it presented to them once when loading up the app.
 
-This is usually attached to the top or first couple levels in my SwfitUI apps to quickly use
+And since its in its own View I trigger it with a `.sheet` and its attached to the top or first couple levels in my SwfitUI apps to trigger first opens
 
 ```
+... View
+.onAppear(perform: {
+      if (settings.versionApp != global.version) {
+          showingNewFeaturesView.toggle()
+      }
+})
 .sheet(isPresented: $showingNewFeaturesView, onDismiss: {
  ... triggering version bump value for next version number
 }) {
