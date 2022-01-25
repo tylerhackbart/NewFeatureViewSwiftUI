@@ -69,5 +69,3 @@ This is usually attached to the top or first couple levels in my SwfitUI apps to
 
 
 Happy Coding 👋
-
-Follow me on twitter https://twitter.com/tylerhackbart
