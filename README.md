@@ -2,7 +2,8 @@
 
 Here is a a quick SwiftUI view for presenting new features in your iOS App
 
-![smartmockups_kytfkg2t](https://user-images.githubusercontent.com/3589463/150892795-da5f3ac7-c436-46b5-b8b0-aaadcc609044.jpg)
+![smartmockups_kytgdoto](https://user-images.githubusercontent.com/3589463/150895011-7bb04164-539d-4aaa-97bc-68d2c7f6c296.jpg)
+
 
 This View component has 3 parameters:
 
