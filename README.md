@@ -37,7 +37,7 @@ struct UpdateItem {
 }
 ```
 
-This UpdateItem object takes in 3 parameters:
+This `UpdateItem` object takes in 3 parameters:
 
 `id` - Unique for for loop
 
@@ -45,10 +45,11 @@ This UpdateItem object takes in 3 parameters:
 
 `content` - Text of what is inside the specific icon display
 
-Example UpdateItem
+Example `UpdateItem`
 ```
 UpdateItem(id: 1, icon: "x.circle", content: "Sample and this is the section of the same time that displays the view. This is only here and not other spot")
 ```
+
 
 I usually hook it up to global variables connected to local storage so that a user only gets it presented to them once when loading up the app.
 
@@ -64,7 +65,9 @@ This is usually attached to the top or first couple levels in my SwfitUI apps to
       bannerBeforeButtonText: global.tagLineNewFeatureScreen
    )
 }
+```
 
 
+Happy Coding 👋
 
-
+Follow me on twitter https://twitter.com/tylerhackbart
